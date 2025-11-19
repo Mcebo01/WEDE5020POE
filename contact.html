@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SportsStatsHub | Contact</title>
+  <meta name="description" content="Contact SportsStatsHub for support, media requests or general messages." />
+  <link rel="stylesheet" href="css/style3.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner container">
+      <a class="site-brand" href="index.html">
+        <img src="pictures/Supreme -Logo.png" alt="SportsStatsHub logo" class="logo" />
+        <span>SportsStatsHub</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <ul class="main-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="PlayerProfile.html">Players</a></li>
+          <li><a href="teams.html">Teams</a></li>
+          <li><a href="leagues.html">Leagues</a></li>
+          <li><a href="stats.html">Stats</a></li>
+          <li><a href="enquiry.html">Enquiry</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+          <li><a href="about.html" >About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Contact Us</h1>
+    <p>Send us a message and we'll get back to you.</p>
+
+    <form id="contactForm" novalidate>
+    <fieldset>
+      <legend>Contact form</legend>
+
+      <label for="cname">Full name <span aria-hidden="true">*</span></label>
+      <input id="cname" name="name" type="text" required minlength="2" aria-required="true" />
+
+      <label for="cemail">Email <span aria-hidden="true">*</span></label>
+      <input id="cemail" name="email" type="email" required aria-required="true" />
+
+      <label for="ctype">Message type <span aria-hidden="true">*</span></label>
+      <select id="ctype" name="messageType" required aria-required="true">
+        <option value="">-- choose --</option>
+        <option value="support">Support</option>
+        <option value="media">Media request</option>
+        <option value="partnership">Partnership</option>
+        <option value="feedback">Feedback</option>
+        <option value="other">Other</option>
+      </select>
+
+      <label for="cmessage">Message <span aria-hidden="true">*</span></label>
+      <textarea id="cmessage" name="message" rows="6" required minlength="10" maxlength="1200" aria-required="true"></textarea>
+
+      <div id="contactErrors" class="form-errors" aria-live="polite"></div>
+
+      <button type="submit" class="btn">Compose email & open mail client</button>
+    </fieldset>
+</form>
+
+    <section id="contactSummary" class="response-card" hidden>
+      <h2>Email preview</h2>
+      <pre id="contactPreview" style="white-space: pre-wrap; background: white; padding: 1em; border-radius: 4px;"></pre>
+      <a id="contactMailto" class="btn" target="_blank" rel="noopener">Open email client</a>
+      <button id="contactBack" class="btn">Back</button>
+    </section>
+
+        <section id="contactSummary" class="response-card" hidden>
+          <h2>Email preview</h2>
+          <p id="contactPreview"></p>
+          <a id="contactMailto" class="btn" target="_blank" rel="noopener">Open email client</a>
+          <button id="contactBack" class="btn">Back</button>
+        </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 ST10474591 SportsStatsHub. All rights reserved.</p>
+    <p>All data and statistics provided for informational purposes only.</p>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

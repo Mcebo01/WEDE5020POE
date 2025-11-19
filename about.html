@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SportsStatsHub | About</title>
+  <link rel="stylesheet" href="css/style3.css" />
+  
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="site-brand" href="index.html">
+        <!-- Website logo -->
+        <img src="pictures/Supreme -Logo.png" alt="SportsStatsHub logo" class="logo">
+        <span>SportsStatsHub</span>
+      </a>
+
+      <nav aria-label="Main navigation">
+        <ul class="main-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="PlayerProfile.html">Players</a></li>
+          <li><a href="teams.html">Teams</a></li>
+          <li><a href="leagues.html">Leagues</a></li>
+          <li><a href="stats.html">Stats</a></li>
+          <li><a href="enquiry.html">Enquiry</a></li>
+          <li><a href="contact.html"aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="about-content">
+      <h1>About SportsStatsHub</h1>
+      <p>
+        Welcome to <strong>SportsStatsHub</strong> – your one-stop platform for exploring the world of sports statistics. 
+        Our mission is to provide fans, researchers, and sports enthusiasts with accurate, detailed, and easy-to-understand 
+        data about players, teams, leagues, and tournaments across the globe.
+      </p>
+
+      <p>
+        At SportsStatsHub, we believe numbers tell stories. From player performance and career achievements 
+        to team histories and league records, we make it simple for you to find the stats that matter. 
+        Whether you’re checking the career of your favorite football star, comparing team performances, 
+        or exploring historical records, we’ve got you covered.
+      </p>
+
+      <p>
+        Our goal is to bring sports closer to you by turning raw data into meaningful insights. 
+        With a user-friendly design, updated information, and profiles of some of the biggest names in sports, 
+        SportsStatsHub is here to keep you informed and connected to the game you love.
+      </p>
+
+      <h2>Where to Find Us</h2>
+      <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d893.4492311493914!2d27.808010428312183!3d-26.397747698553868!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e95aec030bf15d5%3A0x79629f2500192630!2s1078%20Triggerfish%20Cres%2C%20Lawley%2C%201830%2C%20South%20Africa!5e0!3m2!1sen!2sie!4v1756325270232!5m2!1sen!2sie" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-column">
+        <h3>Sports</h3>
+        <ul>
+          <li><a href="https://www.flashscore.co.za/">Football</a></li>
+          <li><a href="https://www.flashscore.co.za/basketball/">Basketball</a></li>
+          <li><a href="https://www.flashscore.co.za/baseball/">Baseball</a></li>
+          <li><a href="https://www.flashscore.co.za/tennis/">Tennis</a></li>
+          <li><a href="https://www.flashscore.co.za/field-hockey/">Hockey</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-column">
+        <h3>Features</h3>
+        <ul>
+          <li><a href="PlayerProfile.html">Player Profiles</a></li>
+          <li><a href="teams.html">Team Statistics</a></li>
+          <li><a href="leagues.html">League Standings</a></li>
+          <li><a href="stats.html">Historical Data</a></li>
+          <li><a href="enquiry.html">Enquiry</a></li>
+          <li><a href="contact.html" >Contact</a></li>
+          <li><a href="about.html" >About</a></li>
+
+        </ul>
+      </div>
+    </div>
+    
+    <div class="copyright">
+      <p>&copy; 2025 ST10474591 SportsStatsHub. All rights reserved.</p>
+      <p>All data and statistics provided for informational purposes only.</p>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      const current = (window.location.pathname.split("/").pop() || 'index.html').toLowerCase();
+      document.querySelectorAll('nav a').forEach(a => {
+        const href = (a.getAttribute('href') || '').toLowerCase();
+        // match exact (teams.html == teams.html) OR match index pages
+        if (href === current || (href === 'index.html' && (current === '' || current === 'index.html'))) {
+          a.classList.add('active');
+          a.setAttribute('aria-current', 'page');
+        }
+      });
+    })();
+  </script>
+</body>
+</html>

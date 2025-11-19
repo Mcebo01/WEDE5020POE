@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SportsStatsHub | Enquiry</title>
+  <meta name="description" content="Enquire about player data, team subscriptions or partnerships with SportsStatsHub." />
+  <link rel="stylesheet" href="css/style3.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner container">
+      <a class="site-brand" href="index.html">
+        <img src="pictures/Supreme -Logo.png" alt="SportsStatsHub logo" class="logo" />
+        <span>SportsStatsHub</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <ul class="main-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="PlayerProfile.html">Players</a></li>
+          <li><a href="teams.html">Teams</a></li>
+          <li><a href="leagues.html">Leagues</a></li>
+          <li><a href="stats.html">Stats</a></li>
+          <li><a href="enquiry.html" aria-current="page">Enquiry</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="about.html" >About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Make an Enquiry</h1>
+    <p>Use this form to enquire about dataset access, team subscriptions, sponsorships or volunteering.</p>
+
+    <form id="enquiryForm" novalidate>
+      <fieldset>
+        <legend>Enquiry details</legend>
+
+        <label for="ename">Full name <span aria-hidden="true">*</span></label>
+        <input id="ename" name="name" type="text" required minlength="2" />
+
+        <label for="eemail">Email <span aria-hidden="true">*</span></label>
+        <input id="eemail" name="email" type="email" required />
+
+        <label for="ephone">Phone</label>
+        <input id="ephone" name="phone" type="tel" pattern="^\+?[0-9\s\-]{7,20}$" placeholder="+27 82 ..." />
+
+        <label for="etype">Enquiry Type <span aria-hidden="true">*</span></label>
+        <select id="etype" name="type" required>
+          <option value="">-- choose --</option>
+          <option value="data">Dataset / API access</option>
+          <option value="subscription">Team subscription</option>
+          <option value="sponsorship">Sponsorship</option>
+          <option value="volunteer">Volunteer</option>
+          <option value="other">Other</option>
+        </select>
+
+        <label for="edetails">Details (max 800 chars)</label>
+        <textarea id="edetails" name="details" rows="6" maxlength="800"></textarea>
+
+        <label for="ebudget">Estimated budget (optional)</label>
+        <input id="ebudget" name="budget" type="number" min="0" placeholder="e.g. 5000" />
+
+        <div id="enquiryErrors" class="form-errors" aria-live="polite"></div>
+
+        <button type="submit" class="btn">Submit enquiry</button>
+        <button type="button" id="enquiryReset" class="btn">Reset</button>
+      </fieldset>
+    </form>
+
+    <section id="enquiryResponse" class="response-card" hidden>
+      <h2>Enquiry summary</h2>
+      <p id="enquirySummary"></p>
+      <button id="enquiryBack" class="btn">Make another enquiry</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 ST10474591 SportsStatsHub. All rights reserved.</p>
+    <p>All data and statistics provided for informational purposes only.</p>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

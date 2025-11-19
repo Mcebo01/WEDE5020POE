@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SportsStatsHub | Comprehensive Player Statistics & Sports Data</title>
+  <meta name="description" content="SportsStatsHub provides detailed career statistics, team history, and performance analytics for thousands of professional athletes across multiple sports including football, basketball, and more.">
+  <meta name="keywords" content="sports statistics, player stats, football data, basketball analytics, sports analytics, player profiles, team statistics">
+  <meta name="author" content="SportsStatsHub">
+  
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="SportsStatsHub | Comprehensive Sports Statistics">
+  <meta property="og:description" content="Your one-stop platform for exploring detailed sports statistics and player analytics.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://sportsstatshub.com">
+  
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SportsStatsHub | Sports Statistics Platform">
+  <meta name="twitter:description" content="Comprehensive sports statistics and player analytics.">
+  <link rel="stylesheet" href="css/style3.css" />
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "SportsStatsHub",
+    "url": "https://sportsstatshub.com",
+    "description": "Comprehensive sports statistics and player analytics platform",
+    "publisher": {
+      "@type": "Organization",
+      "name": "SportsStatsHub",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://sportsstatshub.com/pictures/Supreme-Logo.png"
+      }
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="site-brand" href="index.html">
+        <img src="pictures/Supreme -Logo.png" alt="SportsStatsHub logo" class="logo">
+        <span>SportsStatsHub</span>
+      </a>
+
+      <nav aria-label="Main navigation">
+        <ul class="main-nav">
+          <li><a href="index.html"aria-current="page">Home</a></li>
+          <li><a href="PlayerProfile.html">Players</a></li>
+          <li><a href="teams.html">Teams</a></li>
+          <li><a href="leagues.html">Leagues</a></li>
+          <li><a href="stats.html">Stats</a></li>
+          <li><a href="enquiry.html">Enquiry</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="about.html" >About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Comprehensive Player Statistics at Your Fingertips</h1>
+        <p>SportsStatsHub provides detailed career statistics, team history, and performance analytics for thousands of professional athletes across multiple sports.</p>
+        <div class="hero-btns">
+          <a href="PlayerProfile.html" class="btn">Explore Players</a>
+          <a href="stats.html" class="btn">View Statistics</a>
+        </div>
+      </div>
+    </section>
+    
+    <section class="features">
+      <h2 class="section-title">Why SportsStatsHub?</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">📊</div>
+          <h3>Comprehensive Stats</h3>
+          <p>Access complete career statistics including goals, assists, appearances, ratings, and advanced metrics for every season of a player's career.</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">⏱️</div>
+          <h3>Historical Data</h3>
+          <p>Track player progression through their entire career with our detailed historical performance data across all teams and competitions.</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">📈</div>
+          <h3>Advanced Analytics</h3>
+          <p>Explore visualizations and advanced metrics that go beyond basic stats to give deeper insights into player performance.</p>
+        </div>
+      </div>
+    </section>
+    
+    <section class="stats-preview">
+      <div class="stats-container">
+        <h2 class="section-title">Our Data in Numbers</h2>
+        <div class="stats-grid">
+          <div class="stat-item">
+            <div class="stat-number">25,000+</div>
+            <div class="stat-label">Player Profiles</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">500+</div>
+            <div class="stat-label">Teams Covered</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">50+</div>
+            <div class="stat-label">Leagues Worldwide</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">1M+</div>
+            <div class="stat-label">Data Points</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="cta">
+      <div class="cta-container">
+        <h2>Start Exploring Today</h2>
+        <p>Join thousands of sports enthusiasts who use SportsStatsHub to stay informed about their favorite players and teams.</p>
+        <div class="hero-btns">
+          <a href="PlayerProfile.html" class="btn">Browse Players</a>
+          <a href="teams.html" class="btn">Explore Teams</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 ST10474591 SportsStatsHub. All rights reserved.</p>
+    <p>All data and statistics provided for informational purposes only.</p>
+  </footer>
+
+  <script>
+    // Active navigation link
+    (function () {
+      const current = (window.location.pathname.split("/").pop() || 'index.html').toLowerCase();
+      document.querySelectorAll('nav a').forEach(a => {
+        const href = (a.getAttribute('href') || '').toLowerCase();
+        if (href === current || (href === 'index.html' && (current === '' || current === 'index.html'))) {
+          a.classList.add('active');
+          a.setAttribute('aria-current', 'page');
+        }
+      });
+    })();
+  </script>
+</body>
+</html>

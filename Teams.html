@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SportsStatsHub | Teams</title>
+  <link rel="stylesheet" href="css/stats.css" />
+  
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="site-brand" href="index.html">
+        <!-- Website logo -->
+        <img src="pictures/Supreme -Logo.png" alt="SportsStatsHub logo" class="logo">
+        <span>SportsStatsHub</span>
+      </a>
+
+      <nav aria-label="Main navigation">
+        <ul class="main-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="PlayerProfile.html">Players</a></li>
+          <li><a href="teams.html"aria-current="page">Teams</a></li>
+          <li><a href="leagues.html">Leagues</a></li>
+          <li><a href="stats.html">Stats</a></li>
+          <li><a href="enquiry.html">Enquiry</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="content">
+      <h1>Teams</h1>
+      <p>Welcome to the Teams section of SportsStatsHub. Browse through teams, their players, and key stats.</p>
+      
+      <div class="team-cards">
+        <!-- FC Barcelona -->
+        <div class="team-card">
+          <h2>Barcelona</h2>
+          <img src="pictures/Barcelona-Logo.png" alt="FC Barcelona Team Logo" class="team-logo">
+        </div>
+        
+        <!-- Bayern -->
+        <div class="team-card">
+          <h2>Bayern</h2>
+          <img src="pictures/Bayern.jpg" alt="FC Bayern Team Logo" class="team-logo">
+        </div>
+
+        <!-- Dortmund -->
+        <div class="team-card">
+          <h2>Dortmund</h2>
+          <img src="pictures/Dortmund.jpg" alt="Dortmund Team Logo" class="team-logo">
+        </div>
+
+        <!-- Chelsea FC-->
+        <div class="team-card">
+          <h2>Chelsea FC</h2>
+          <img src="pictures/Chelsea FC.jpeg" alt="Chelsea FC Team Logo" class="team-logo">
+        </div>
+
+        <!-- Tottenham FC-->
+        <div class="team-card">
+          <h2>Tottenham FC</h2>
+          <img src="pictures/tottenham.jpg" alt="Tottenham FC Team Logo" class="team-logo">
+        </div>
+
+        <!-- Man City-->
+        <div class="team-card">
+          <h2>Man City FC</h2>
+          <img src="pictures/man city.jpg" alt="Man City FC Team Logo" class="team-logo">
+        </div>
+
+        <!-- Al Nassr-->
+        <div class="team-card">
+          <h2>Al Nassr</h2>
+          <img src="pictures/al nassr.jpg" alt="Al Nassr Team Logo" class="team-logo">
+        </div>
+
+        <!-- Juventus -->
+        <div class="team-card">
+          <h2>Juventus</h2>
+          <img src="pictures/Juventus.jpg" alt="Juventus Team Logo" class="team-logo">
+        </div>
+
+        <!-- Man Utd -->
+        <div class="team-card">
+          <h2>Man Utd</h2>
+          <img src="pictures/man utd.jpg" alt="Man Utd Team Logo" class="team-logo">
+        </div>
+      </div>
+    
+    <aside>
+      <h2>Quick Links</h2>
+      <ul>
+        <li><a href="PlayerProfile.html">Top Players</a></li>
+        <li><a href="leagues.html">All Leagues</a></li>
+        <li><a href="stats.html">Team Statistics</a></li>
+        <li><a href="index.html">Home Page</a></li>
+        <li><a href="enquiry.html">Enquiry</a></li>
+        <li><a href="contact.html"></a>Contact</a></li>
+        <li><a href="about.html" >About</a></li>
+      </ul>
+    </aside>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 ST10474591 SportsStatsHub. All rights reserved.</p>
+    <p>All data and statistics provided for informational purposes only.</p>
+  </footer>
+
+  <script>
+    (function () {
+      const current = (window.location.pathname.split("/").pop() || 'index.html').toLowerCase();
+      document.querySelectorAll('nav a').forEach(a => {
+        const href = (a.getAttribute('href') || '').toLowerCase();
+        // match exact (teams.html == teams.html) OR match index pages
+        if (href === current || (href === 'index.html' && (current === '' || current === 'index.html'))) {
+          a.classList.add('active');
+          a.setAttribute('aria-current', 'page');
+        }
+      });
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SportsStatsHub | Comprehensive Player Statistics & Sports Data</title>
+  <meta name="description" content="SportsStatsHub provides detailed career statistics, team history, and performance analytics for thousands of professional athletes across multiple sports including football, basketball, and more.">
+  <meta name="keywords" content="sports statistics, player stats, football data, basketball analytics, sports analytics, player profiles, team statistics">
+  <meta name="author" content="SportsStatsHub">
+  
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="SportsStatsHub | Comprehensive Sports Statistics">
+  <meta property="og:description" content="Your one-stop platform for exploring detailed sports statistics and player analytics.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://sportsstatshub.com">
+  
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SportsStatsHub | Sports Statistics Platform">
+  <meta name="twitter:description" content="Comprehensive sports statistics and player analytics.">
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "SportsStatsHub",
+    "url": "https://sportsstatshub.com",
+    "description": "Comprehensive sports statistics and player analytics platform",
+    "publisher": {
+      "@type": "Organization",
+      "name": "SportsStatsHub",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://sportsstatshub.com/pictures/Supreme-Logo.png"
+      }
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="site-brand" href="index.html">
+        <!-- Website logo -->
+        <img src="pictures/Supreme -Logo.png" alt="SportsStatsHub logo" class="logo">
+        <span>SportsStatsHub</span>
+      </a>
+
+      <nav aria-label="Main navigation">
+        <ul class="main-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="PlayerProfile.html">Players</a></li>
+          <li><a href="teams.html">Teams</a></li>
+          <li><a href="leagues.html"aria-current="page">Leagues</a></li>
+          <li><a href="stats.html">Stats</a></li>
+          <li><a href="enquiry.html" >Enquiry</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="about.html" >About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h2>Top Football Leagues</h2>
+    <ol>
+      <li>Bundesliga (Germany)</li>
+      <li>Eredivisie (Netherlands)</li>
+      <li>Super Lig (Turkey)</li>
+      <li>Serie A (Italy)</li>
+      <li>La Liga (Spain)</li>
+      <li>Ligue 1 (France)</li>
+      <li>Premier League (England)</li>
+      <li>Major League Soccer (USA)</li>
+    </ol>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 ST10474591 SportsStatsHub. All rights reserved.</p>
+    <p>All data and statistics provided for informational purposes only.</p>
+  </footer>
+
+  <script>
+    (function () {
+      const current = (window.location.pathname.split("/").pop() || 'index.html').toLowerCase();
+      document.querySelectorAll('nav a').forEach(a => {
+        const href = (a.getAttribute('href') || '').toLowerCase();
+        // match exact (teams.html == teams.html) OR match index pages
+        if (href === current || (href === 'index.html' && (current === '' || current === 'index.html'))) {
+          a.classList.add('active');
+          a.setAttribute('aria-current', 'page');
+        }
+      });
+    })();
+  </script>
+</body>
+</html>

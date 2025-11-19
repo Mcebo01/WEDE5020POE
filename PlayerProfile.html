@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SportsStatsHub | Player Profiles</title>
+  <link rel="stylesheet" href="css/style3.css" />
+  
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="site-brand" href="index.html">
+      <img src="pictures/Supreme -Logo.png" alt="SportsStatsHub logo" class="logo">
+      <span>SportsStatsHub</span>
+    </a>
+
+    <nav aria-label="Main navigation">
+      <ul class="main-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="PlayerProfile.html" class="active">Players</a></li>
+        <li><a href="teams.html">Teams</a></li>
+        <li><a href="leagues.html">Leagues</a></li>
+        <li><a href="stats.html">Stats</a></li>
+        <li><a href="enquiry.html">Enquiry</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html" >About</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <h1 class="page-title">Player Profiles</h1>
+
+  <!-- Search -->
+  <div class="search-container">
+    <form class="search-form" id="playerSearch">
+      <input type="text" class="search-input" placeholder="Search for a player..." id="searchInput">
+      <button type="submit" class="search-btn">Search</button>
+    </form>
+  </div>
+
+  <!-- Player Gallery -->
+  <section class="player-gallery">
+    <h2>Choose a Player</h2>
+    <div class="gallery-grid">
+      <img src="pictures/lionel-messi.jpg" alt="Lionel Messi" class="gallery-img" data-player="messiProfile">
+      <img src="pictures/erling haaland.jpg" alt="Erling Haaland" class="gallery-img" data-player="haalandProfile">
+      <img src="pictures/salah.jpg" alt="Mohamed Salah" class="gallery-img" data-player="salahProfile">
+      <img src="pictures/Kylian.jpg" alt="Kylian Mbappé" class="gallery-img" data-player="mbappeProfile">
+      <img src="pictures/Lamine Yamal.jpg" alt="Lamine Yamal" class="gallery-img" data-player="yamalProfile">
+    </div>
+  </section>
+
+  <!-- Player Profiles -->
+  <section class="profiles">
+
+    <!-- Messi -->
+    <article class="player-profile hidden" id="messiProfile">
+      <div class="profile-header">
+        <img src="pictures/lionel-messi.jpg" alt="Lionel Messi in Argentina jersey" class="player-image">
+        <div class="player-info">
+          <h2 class="player-name">Lionel Messi</h2>
+          <span class="player-position">Forward</span>
+          <span class="player-age">Age: 36</span>
+          <span class="player-nationality">Nationality: Argentina</span>
+        </div>
+      </div>
+
+      <div class="profile-tabs">
+        <button class="tab-btn active" data-tab="messi-stats">Career Stats</button>
+        <button class="tab-btn" data-tab="messi-teams">Team History</button>
+        <button class="tab-btn" data-tab="messi-achievements">Achievements</button>
+      </div>
+
+      <div class="tab-content active" id="messi-stats">
+        <div class="career-stats">
+          <h3>Career Statistics</h3>
+          <table class="stats-table">
+            <thead>
+              <tr>
+                <th>Season</th>
+                <th>Team</th>
+                <th>Apps</th>
+                <th>Goals</th>
+                <th>Assists</th>
+                <th>Rating</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2022-23</td>
+                <td>Paris Saint-Germain</td>
+                <td>41</td>
+                <td>21</td>
+                <td>20</td>
+                <td>8.37</td>
+              </tr>
+              <tr>
+                <td>2021-22</td>
+                <td>Paris Saint-Germain</td>
+                <td>34</td>
+                <td>11</td>
+                <td>14</td>
+                <td>7.92</td>
+              </tr>
+              <tr>
+                <td>2020-21</td>
+                <td>Barcelona</td>
+                <td>47</td>
+                <td>38</td>
+                <td>14</td>
+                <td>8.52</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="tab-content" id="messi-teams">
+        <div class="team-history">
+          <div class="team-card">
+            <img src="pictures/PSG.jpeg" alt="PSG Logo" class="team-logo">
+            <div class="team-info">
+              <h4>Paris Saint-Germain</h4>
+              <span>2021-2023</span>
+              <div class="team-stats">
+                <span>75 Apps</span>
+                <span>32 Goals</span>
+                <span>34 Assists</span>
+              </div>
+            </div>
+          </div>
+          <div class="team-card">
+            <img src="pictures/Barcelona-Logo.png" alt="Barcelona Logo" class="team-logo">
+            <div class="team-info">
+              <h4>FC Barcelona</h4>
+              <span>2004-2021</span>
+              <div class="team-stats">
+                <span>778 Apps</span>
+                <span>672 Goals</span>
+                <span>268 Assists</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-content" id="messi-achievements">
+        <div class="achievements-list">
+          <h3>Major Achievements</h3>
+          <ul>
+            <li>8x Ballon d'Or Winner</li>
+            <li>2022 FIFA World Cup Winner</li>
+            <li>4x Champions League Winner</li>
+            <li>10x La Liga Winner</li>
+            <li>2x Ligue 1 Winner</li>
+            <li>6x European Golden Shoe</li>
+            <li>3x UEFA Best Player in Europe</li>
+          </ul>
+        </div>
+      </div>
+    </article>
+
+    <!-- Haaland -->
+    <article class="player-profile hidden" id="haalandProfile">
+      <div class="profile-header">
+        <img src="pictures/erling haaland.jpg" alt="Erling Haaland in Manchester City jersey" class="player-image">
+        <div class="player-info">
+          <h2 class="player-name">Erling Haaland</h2>
+          <span class="player-position">Striker</span>
+          <span class="player-age">Age: 23</span>
+          <span class="player-nationality">Nationality: Norway</span>
+        </div>
+      </div>
+
+      <div class="profile-tabs">
+        <button class="tab-btn active" data-tab="haaland-stats">Career Stats</button>
+        <button class="tab-btn" data-tab="haaland-teams">Team History</button>
+        <button class="tab-btn" data-tab="haaland-achievements">Achievements</button>
+      </div>
+
+      <div class="tab-content active" id="haaland-stats">
+        <div class="career-stats">
+          <h3>Career Statistics</h3>
+          <table class="stats-table">
+            <thead>
+              <tr>
+                <th>Season</th>
+                <th>Team</th>
+                <th>Apps</th>
+                <th>Goals</th>
+                <th>Assists</th>
+                <th>Rating</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2022-23</td>
+                <td>Manchester City</td>
+                <td>53</td>
+                <td>52</td>
+                <td>9</td>
+                <td>8.50</td>
+              </tr>
+              <tr>
+                <td>2021-22</td>
+                <td>Borussia Dortmund</td>
+                <td>30</td>
+                <td>29</td>
+                <td>8</td>
+                <td>8.20</td>
+              </tr>
+              <tr>
+                <td>2020-21</td>
+                <td>Borussia Dortmund</td>
+                <td>41</td>
+                <td>41</td>
+                <td>12</td>
+                <td>8.45</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="tab-content" id="haaland-teams">
+        <div class="team-history">
+          <div class="team-card">
+            <img src="pictures/man city.jpg" alt="Manchester City Logo" class="team-logo">
+            <div class="team-info">
+              <h4>Manchester City</h4>
+              <span>2022-Present</span>
+              <div class="team-stats">
+                <span>89 Apps</span>
+                <span>83 Goals</span>
+                <span>15 Assists</span>
+              </div>
+            </div>
+          </div>
+          <div class="team-card">
+            <img src="pictures/Dortmund.jpg" alt="Dortmund Logo" class="team-logo">
+            <div class="team-info">
+              <h4>Borussia Dortmund</h4>
+              <span>2020-2022</span>
+              <div class="team-stats">
+                <span>89 Apps</span>
+                <span>86 Goals</span>
+                <span>23 Assists</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-content" id="haaland-achievements">
+        <div class="achievements-list">
+          <h3>Major Achievements</h3>
+          <ul>
+            <li>2023 UEFA Champions League Winner</li>
+            <li>2023 Premier League Winner</li>
+            <li>2023 European Golden Shoe</li>
+            <li>2022-23 Premier League Golden Boot</li>
+            <li>2020-21 Bundesliga Player of the Season</li>
+            <li>2023 PFA Players' Player of the Year</li>
+            <li>2023 FWA Footballer of the Year</li>
+          </ul>
+        </div>
+      </div>
+    </article>
+
+    <!-- Salah -->
+    <article class="player-profile hidden" id="salahProfile">
+      <div class="profile-header">
+        <img src="pictures/salah.jpg" alt="Mohamed Salah in Liverpool jersey" class="player-image">
+        <div class="player-info">
+          <h2 class="player-name">Mohamed Salah</h2>
+          <span class="player-position">Forward</span>
+          <span class="player-age">Age: 31</span>
+          <span class="player-nationality">Nationality: Egypt</span>
+        </div>
+      </div>
+
+      <div class="profile-tabs">
+        <button class="tab-btn active" data-tab="salah-stats">Career Stats</button>
+        <button class="tab-btn" data-tab="salah-teams">Team History</button>
+        <button class="tab-btn" data-tab="salah-achievements">Achievements</button>
+      </div>
+
+      <div class="tab-content active" id="salah-stats">
+        <div class="career-stats">
+          <h3>Career Statistics</h3>
+          <table class="stats-table">
+            <thead>
+              <tr>
+                <th>Season</th>
+                <th>Team</th>
+                <th>Apps</th>
+                <th>Goals</th>
+                <th>Assists</th>
+                <th>Rating</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2022-23</td>
+                <td>Liverpool</td>
+                <td>51</td>
+                <td>30</td>
+                <td>16</td>
+                <td>8.15</td>
+              </tr>
+              <tr>
+                <td>2021-22</td>
+                <td>Liverpool</td>
+                <td>51</td>
+                <td>31</td>
+                <td>16</td>
+                <td>8.35</td>
+              </tr>
+              <tr>
+                <td>2020-21</td>
+                <td>Liverpool</td>
+                <td>37</td>
+                <td>22</td>
+                <td>5</td>
+                <td>7.90</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="tab-content" id="salah-teams">
+        <div class="team-history">
+          <div class="team-card">
+            <img src="pictures/liverpool.jpg" alt="Liverpool Logo" class="team-logo">
+            <div class="team-info">
+              <h4>Liverpool FC</h4>
+              <span>2017-Present</span>
+              <div class="team-stats">
+                <span>332 Apps</span>
+                <span>204 Goals</span>
+                <span>88 Assists</span>
+              </div>
+            </div>
+          </div>
+          <div class="team-card">
+            <img src="pictures/roma.jpg" alt="Roma Logo" class="team-logo">
+            <div class="team-info">
+              <h4>AS Roma</h4>
+              <span>2015-2017</span>
+              <div class="team-stats">
+                <span>83 Apps</span>
+                <span>34 Goals</span>
+                <span>24 Assists</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-content" id="salah-achievements">
+        <div class="achievements-list">
+          <h3>Major Achievements</h3>
+          <ul>
+            <li>2019 UEFA Champions League Winner</li>
+            <li>2020 Premier League Winner</li>
+            <li>3x Premier League Golden Boot</li>
+            <li>2x PFA Players' Player of the Year</li>
+            <li>2018 FWA Footballer of the Year</li>
+            <li>2017 African Footballer of the Year</li>
+            <li>2018 Puskás Award</li>
+          </ul>
+        </div>
+      </div>
+    </article>
+
+    <!-- Mbappé -->
+    <article class="player-profile hidden" id="mbappeProfile">
+      <div class="profile-header">
+        <img src="pictures/Kylian.jpg" alt="Kylian Mbappé in PSG jersey" class="player-image">
+        <div class="player-info">
+          <h2 class="player-name">Kylian Mbappé</h2>
+          <span class="player-position">Forward</span>
+          <span class="player-age">Age: 25</span>
+          <span class="player-nationality">Nationality: France</span>
+        </div>
+      </div>
+
+      <div class="profile-tabs">
+        <button class="tab-btn active" data-tab="mbappe-stats">Career Stats</button>
+        <button class="tab-btn" data-tab="mbappe-teams">Team History</button>
+        <button class="tab-btn" data-tab="mbappe-achievements">Achievements</button>
+      </div>
+
+      <div class="tab-content active" id="mbappe-stats">
+        <div class="career-stats">
+          <h3>Career Statistics</h3>
+          <table class="stats-table">
+            <thead>
+              <tr>
+                <th>Season</th>
+                <th>Team</th>
+                <th>Apps</th>
+                <th>Goals</th>
+                <th>Assists</th>
+                <th>Rating</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2022-23</td>
+                <td>Paris Saint-Germain</td>
+                <td>43</td>
+                <td>41</td>
+                <td>10</td>
+                <td>8.45</td>
+              </tr>
+              <tr>
+                <td>2021-22</td>
+                <td>Paris Saint-Germain</td>
+                <td>46</td>
+                <td>39</td>
+                <td>26</td>
+                <td>8.60</td>
+              </tr>
+              <tr>
+                <td>2020-21</td>
+                <td>Paris Saint-Germain</td>
+                <td>47</td>
+                <td>42</td>
+                <td>11</td>
+                <td>8.50</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="tab-content" id="mbappe-teams">
+        <div class="team-history">
+          <div class="team-card">
+            <img src="pictures/PSG.jpeg" alt="PSG Logo" class="team-logo">
+            <div class="team-info">
+              <h4>Paris Saint-Germain</h4>
+              <span>2017-Present</span>
+              <div class="team-stats">
+                <span>290 Apps</span>
+                <span>243 Goals</span>
+                <span>105 Assists</span>
+              </div>
+            </div>
+          </div>
+          <div class="team-card">
+            <img src="pictures/monaco.jpg" alt="Monaco Logo" class="team-logo">
+            <div class="team-info">
+              <h4>AS Monaco</h4>
+              <span>2015-2017</span>
+              <div class="team-stats">
+                <span>60 Apps</span>
+                <span>27 Goals</span>
+                <span>16 Assists</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-content" id="mbappe-achievements">
+        <div class="achievements-list">
+          <h3>Major Achievements</h3>
+          <ul>
+            <li>2018 FIFA World Cup Winner</li>
+            <li>5x Ligue 1 Winner</li>
+            <li>4x Ligue 1 Player of the Year</li>
+            <li>5x Ligue 1 Top Scorer</li>
+            <li>2022 World Cup Golden Boot</li>
+            <li>2017 Golden Boy Award</li>
+            <li>2023 French Player of the Year</li>
+          </ul>
+        </div>
+      </div>
+    </article>
+
+    <!-- Yamal -->
+    <article class="player-profile hidden" id="yamalProfile">
+      <div class="profile-header">
+        <img src="pictures/Lamine Yamal.jpg" alt="Lamine Yamal in Barcelona jersey" class="player-image">
+        <div class="player-info">
+          <h2 class="player-name">Lamine Yamal</h2>
+          <span class="player-position">Right Winger</span>
+          <span class="player-age">Age: 16</span>
+          <span class="player-nationality">Nationality: Spain</span>
+        </div>
+      </div>
+
+      <div class="profile-tabs">
+        <button class="tab-btn active" data-tab="yamal-stats">Career Stats</button>
+        <button class="tab-btn" data-tab="yamal-teams">Team History</button>
+        <button class="tab-btn" data-tab="yamal-achievements">Achievements</button>
+      </div>
+
+      <div class="tab-content active" id="yamal-stats">
+        <div class="career-stats">
+          <h3>Career Statistics</h3>
+          <table class="stats-table">
+            <thead>
+              <tr>
+                <th>Season</th>
+                <th>Team</th>
+                <th>Apps</th>
+                <th>Goals</th>
+                <th>Assists</th>
+                <th>Rating</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2023-24</td>
+                <td>Barcelona</td>
+                <td>37</td>
+                <td>7</td>
+                <td>8</td>
+                <td>7.40</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="tab-content" id="yamal-teams">
+        <div class="team-history">
+          <div class="team-card">
+            <img src="pictures/Barcelona-Logo.png" alt="Barcelona Logo" class="team-logo">
+            <div class="team-info">
+              <h4>FC Barcelona</h4>
+              <span>2023-Present</span>
+              <div class="team-stats">
+                <span>37 Apps</span>
+                <span>7 Goals</span>
+                <span>8 Assists</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-content" id="yamal-achievements">
+        <div class="achievements-list">
+          <h3>Major Achievements</h3>
+          <ul>
+            <li>Youngest player to debut for Barcelona in La Liga (15 years, 9 months)</li>
+            <li>Youngest goalscorer in La Liga history</li>
+            <li>2023-24 La Liga Winner</li>
+            <li>2023 Golden Boy Award nominee</li>
+          </ul>
+        </div>
+      </div>
+    </article>
+
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-content">
+    <div class="footer-column">
+      <h3>SportsStatsHub</h3>
+      <p>Your ultimate destination for sports statistics and player profiles.</p>
+    </div>
+    <div class="footer-column">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="PlayerProfile.html">Players</a></li>
+        <li><a href="teams.html">Teams</a></li>
+        <li><a href="leagues.html">Leagues</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h3>Connect</h3>
+      <ul>
+        <li><a href="https://www.x.com">Twitter</a></li>
+        <li><a href="https://www.facebook.com/">Facebook</a></li>
+        <li><a href="https://www.instagram.com">Instagram</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>&copy; 2025 SportsStatsHub. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+  // Switch profile on gallery click
+  document.querySelectorAll('.gallery-img').forEach(img => {
+    img.addEventListener('click', () => {
+      // Hide all profiles
+      document.querySelectorAll('.player-profile').forEach(profile => {
+        profile.classList.add('hidden');
+      });
+
+      // Show clicked profile
+      const target = img.getAttribute('data-player');
+      document.getElementById(target).classList.remove('hidden');
+      window.scrollTo({ top: document.getElementById(target).offsetTop - 50, behavior: 'smooth' });
+    });
+  });
+
+  // Tab switching functionality
+  document.querySelectorAll('.tab-btn').forEach(button => {
+    button.addEventListener('click', () => {
+      const tabId = button.getAttribute('data-tab');
+      const profile = button.closest('.player-profile');
+      
+      // Remove active class from all tabs in this profile
+      profile.querySelectorAll('.tab-btn').forEach(btn => {
+        btn.classList.remove('active');
+      });
+      
+      // Hide all tab content in this profile
+      profile.querySelectorAll('.tab-content').forEach(content => {
+        content.classList.remove('active');
+      });
+      
+      // Activate clicked tab
+      button.classList.add('active');
+      document.getElementById(tabId).classList.add('active');
+    });
+  });
+
+  // Search functionality
+  document.getElementById('playerSearch').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const searchTerm = document.getElementById('searchInput').value.toLowerCase().trim();
+    
+    if (!searchTerm) return;
+    
+    // Simple search implementation
+    const players = document.querySelectorAll('.player-profile');
+    let found = false;
+    
+    players.forEach(player => {
+      const playerName = player.querySelector('.player-name').textContent.toLowerCase();
+      if (playerName.includes(searchTerm)) {
+        // Hide all profiles
+        document.querySelectorAll('.player-profile').forEach(p => {
+          p.classList.add('hidden');
+        });
+        
+        // Show matching profile
+        player.classList.remove('hidden');
+        window.scrollTo({ top: player.offsetTop - 50, behavior: 'smooth' });
+        found = true;
+      }
+    });
+    
+    if (!found) {
+      alert('Player not found. Please try another search.');
+    }
+  });
+
+</script>
+</body>
+</html>
